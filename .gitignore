@@ -1,3 +1,7 @@
+.vscode/
+
+# Backend stuff
 backend/lib/
 backend/bin/
-.vscode/
+
+# Frontend Stuff
