@@ -3,5 +3,6 @@
 # Backend stuff
 backend/lib/
 backend/bin/
+backend/pyvenv.cfg
 
 # Frontend Stuff
