@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/alexr17/dealdock.svg?token=eTSsnFCxpGUesGuyt7Xm&branch=master)](https://travis-ci.com/alexr17/dealdock)
+
 # DealDock Main Site
 
 Clone this repository (into your work folder) and cd into it:
@@ -22,6 +24,13 @@ Make sure to use the --save/--save-dev accordingly when installing packages so i
 ## Backend
 
 All of the configuration and setup should go here.
+
+### Running Backend
+
+The basic command to run the backend in development is:
+```
+python manage.py runserver <optional port #>
+```
 
 ### Environment Setup
 

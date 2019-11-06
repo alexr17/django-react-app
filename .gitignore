@@ -4,5 +4,6 @@
 backend/lib/
 backend/bin/
 backend/pyvenv.cfg
+*.pyc
 
 # Frontend Stuff
