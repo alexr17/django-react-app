@@ -1,9 +1,11 @@
 .vscode/
 
 # Backend stuff
-backend/lib/
-backend/bin/
-backend/pyvenv.cfg
+lib/
+bin/
+pyvenv.cfg
 *.pyc
+pip-selfcheck.json
 
 # Frontend Stuff
+node_modules/
