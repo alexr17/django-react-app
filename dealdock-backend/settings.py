@@ -52,7 +52,7 @@ MIDDLEWARE = [
   'django.middleware.clickjacking.XFrameOptionsMiddleware'
 ]
 
-ROOT_URLCONF = 'dealdock.urls'
+ROOT_URLCONF = 'dealdock-backend.urls'
 
 TEMPLATES = [
   {
@@ -72,7 +72,7 @@ TEMPLATES = [
   },
 ]
 
-WSGI_APPLICATION = 'dealdock.wsgi.application'
+WSGI_APPLICATION = 'dealdock-backend.wsgi.application'
 
 
 # Database
