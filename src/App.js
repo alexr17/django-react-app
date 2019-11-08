@@ -10,10 +10,10 @@ class App extends Component {
         <header className="App-header">
           <img src={reactLogo} className="App-logo" alt="React logo" />
           <img src={djangoLogo} className="App-logo" alt="Django logo" />
-          <h1 className="App-title">Welcome to the React-Django app</h1>
+          <h1 className="App-title">Welcome to the Dealdock app1</h1>
         </header>
         <p className="App-intro">
-          I'm a blank canvas waiting for a coder's touch!
+          I am a coding God.
         </p>
       </div>
     );
