@@ -5,7 +5,7 @@ ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 DEBUG = True
 
 
-# Database -- development connection
+# Database -- development
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 DATABASES = {
   'default': {
