@@ -64,7 +64,3 @@ pip3 install <your package here>==<optional version #>
 pip3 freeze > requirements.txt
 ```
 Everytime you add packages to the requirements.txt, let everyone know so they can install the new package(s).
-
-### Database Integration
-
-You will need a SQL database GUI. I use TablePlus, which costs a lot more than it used to
