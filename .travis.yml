@@ -1,0 +1,18 @@
+language: python
+
+python:
+  - 3.6
+install:
+  - pip install -r requirements.txt
+
+env:
+  - DJANGO=2.2.7
+
+before_install:
+  - export SETTINGS_ENV=TEST
+  - export PYTHONPATH=$HOME/builds/alexr17/dealdock
+  - export PIP_USE_MIRRORS=true
+  - pip install django==$DJANGO --quiet
+
+script:
+  - python manage.py test

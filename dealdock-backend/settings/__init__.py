@@ -10,6 +10,8 @@ except:
     env = "DEVELOPMENT"
 
 if env == 'PRODUCTION':
-   from .production import *
+    from .production import *
+elif env == "TEST":
+    from .test import *
 else:
-   from .development import *
+    from .development import *
