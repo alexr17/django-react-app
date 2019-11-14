@@ -8,31 +8,7 @@ git clone https://github.com/alexr17/dealdock
 cd dealdock
 ```
 
-## Deployment
-
-### Setting up environment
-
-Install the Heroku CLI: https://devcenter.heroku.com/articles/heroku-cli. Once installed you should be able to use the `heroku` command. At this point you will need to copy the following information into a file. The reason for this is that I do not want each of you logging into my heroku account on your own CLI. Paste this information into `dealdock/.git/config`:
-
-```
-[remote "heroku"]
-	url = git@heroku.com:dealdock.git
-	fetch = +refs/heads/*:refs/remotes/heroku/*
-```
-
-Now when you run the command `git remote -v`, you should see a heroku remote pop up in addition to the github one.
-
-### SSH Stuff
-
-Rather than have you all login to my account to deploy the app, everyone will create their own ssh keys that they send to me. If you don't know about ssh you should google some. To generate an ssh key, navigate to `~/.ssh` (or create it if you don't have it) and run the command `ssh-keygen -t rsa`. Send me the resulting `.pub` file. I will paste it into heroku so they can recognize you when you deploy.
-
-### Deploying
-
-Once I have put the ssh key into heroku, you should be able to deploy the app from your local by running the following command:
-```
-git push heroku master
-```
-!!! Warning !!! This initiates a deployment process which cannot be undone by ^C. If you need to undo a deployment, simply push again with new commits and a new build will be generated. That being said, we are rate-limited to 75 heroku git requests an hour, so please don't hammer the deployment process.
+The information in this README covers setting up your actual codebase in your development environment. For database, deployment, and other setup, please navigate here: https://www.notion.so/dealdock/Engineering-Onboarding-380a88d2e14441398667ad69bd3747ce
 
 ## Frontend
 
@@ -53,6 +29,11 @@ npm start
 The basic command to run the backend in development is:
 ```
 python manage.py runserver
+```
+
+To test backend run
+```
+python manage.py test
 ```
 
 ### Environment Setup
@@ -83,3 +64,7 @@ pip3 install <your package here>==<optional version #>
 pip3 freeze > requirements.txt
 ```
 Everytime you add packages to the requirements.txt, let everyone know so they can install the new package(s).
+
+### Database Integration
+
+You will need a SQL database GUI. I use TablePlus, which costs a lot more than it used to
