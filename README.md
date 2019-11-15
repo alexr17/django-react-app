@@ -20,6 +20,10 @@ npm start
 
 ### Running Backend (in development)
 
+```
+pip install -r requirements.txt
+```
+
 Dev server
 ```
 python manage.py runserver
