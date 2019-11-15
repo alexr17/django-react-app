@@ -10,7 +10,7 @@ DEBUG = True
 DATABASES = {
   'default': {
     'ENGINE': 'django.db.backends.postgresql_psycopg2',
-    'NAME': 'dealdock',
+    'NAME': os.environ['DATABASE_NAME'],
     'USER': os.environ['DATABASE_USER'],
     'PASSWORD': os.environ['DATABASE_PSWD'],
     'HOST': os.environ['DATABASE_URL'],

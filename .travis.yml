@@ -10,7 +10,7 @@ env:
 
 before_install:
   - export SETTINGS_ENV=TEST
-  - export PYTHONPATH=$HOME/builds/alexr17/dealdock
+  - export PYTHONPATH=$HOME/builds/<my-github-username>/<my-github-repo>
   - export PIP_USE_MIRRORS=true
   - pip install django==$DJANGO --quiet
 
